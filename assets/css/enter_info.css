@@ -1,0 +1,93 @@
+.info{
+    font-size: 20px;
+    border-color: gray;
+    border: 2px;
+    border-radius: 5px;
+    border-style: groove;
+    width: 30vw;
+    height: 45vh;
+    margin:auto;
+    margin-top: 13vh;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+.home{
+    margin-left: 50vw;
+}
+a{
+    padding: 1vw;
+    color: aliceblue;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+}
+a:hover{
+    color: #a6a59a;
+}
+.heading{
+    margin-left: 3vw;
+    font-size: 7vh;
+    color: aliceblue;
+}
+.log{
+    text-align: center;
+    padding-right: 2vw;
+    margin-top: 1.8vh;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+.log_1{
+    text-align: center;
+    padding-right: 2vw;
+    margin: 0px;
+    padding-top: 0vh;
+    margin-bottom: 2vh;
+    font-size: 1.3vw ;
+}
+body{
+    background-image: url('../images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    margin-left: 2vw;
+}
+.email{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+}
+.forget{
+    font-size: 1.2vw;
+    margin-top: 1vh;
+}
+.login_button{
+    height: 5vh;
+    width: 26vw;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px;
+    margin-top: 1.6vh;
+    color: white;
+}
+.login_button:hover{
+    background-color: white;
+    color: black;
+}
+.password{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+}
+.signup_info{
+    text-align: center;
+    font-size: 1.3vw;    
+    margin-left: 5vw;
+    margin-top: 1vh;
+}

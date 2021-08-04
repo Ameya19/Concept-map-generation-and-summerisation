@@ -1,0 +1,128 @@
+.info_1{
+    font-size: 20px;
+    border-color: gray;
+    border: 2px;
+    border-radius: 5px;
+    border-style: groove;
+    width: 30vw;
+    height: 62vh;
+    margin:auto;
+    margin-top: 8vh;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+.head_1{
+    margin-top: 2vh;
+    text-align: center;
+    padding-top: 2vh;
+    font-family: Brush Script MT;
+    font-size: 6vw;
+    color: orange;
+}
+.signup_info{
+    text-align: center;
+    padding-right: 2vw;
+    margin-top: 1.8vh;
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+.signup_1{
+    text-align: center;
+    margin: 0px;
+    padding-top: 0vh;
+    margin-bottom: 2vh;
+    margin-right: 2vw;
+    font-size: 1.3vw ;
+    border-radius: 5px;
+}
+body{
+    background-image: url('../images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form{
+    margin-left: 2vw;
+}
+.first_name{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-top: 3vh;
+    margin-bottom : 0.5vh;
+}
+.last_name{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+}
+.username{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+}
+.sign_up{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+}
+.password_1{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+}
+.confirm{
+    height: 5vh;
+    width: 25.5vw;
+    border-style: groove;
+    border-color: gray;
+    border-radius: 5px;
+    margin-bottom : 0.5vh;
+
+}
+.signup{
+    height: 5vh;
+    width: 26vw;
+    background-color: black;
+    border-radius: 5px;
+    border: 2px;
+    margin-top: 1.6vh;
+    color: white;
+}
+.signup:hover{
+    background-color: white;
+    color: black;
+}
+.home{
+    margin-left: 50vw;
+}
+a{
+    padding: 1vw;
+    color: aliceblue;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+}
+a:hover{
+    color: #a6a59a;
+}
+.heading{
+    margin-left: 3vw;
+    font-size: 7vh;
+    color: aliceblue;
+}
