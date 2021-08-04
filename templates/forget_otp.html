@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/otp.css' %}">
+    {% for message in messages %}
+    <script>window.alert('{{message}}');</script>
+    {% endfor %}
+</head>
+<body>
+    {% block content %}
+    <h1 class = "head_1">Concept map Generation and Summerization</h1>
+    <div class = "info_1">
+        <div class = "form">
+            <h3 class = "otp_info">OTP Verification</h3>
+            <p class = 'otp_1'>We have sent the verification code<br> to registered E-mail ID.</p>
+            <form method="POST" action="forget_otp">
+                {% csrf_token %}
+                <input type="number" class="otp" placeholder="Enter Verification Code" name='otp_number' required><br>
+                <button type="submit" class ="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

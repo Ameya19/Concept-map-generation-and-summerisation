@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/forget.css' %}">
+</head>
+<body>
+    {% block content %}
+    <h1 class = "head_2">Concept map Generation and Summerization</h1>
+    <div class = "info_2">
+        <div class = "form">
+            <h3 class = "forget_info">Forget Password</h3>
+            <p class = 'forget_1'>Enter the E-Mail ID for Password</p>
+            <form action = 'forget_email' method="POST">
+                {% csrf_token %}
+                <input type="email" class="forget_email" placeholder="Enter E-mail ID" name='forget_email' required><br>
+                <input type="password" class="password_1" placeholder="New Password" name='password_1' required><br>
+                <input type="password" class="confirm_1" placeholder="Confirm Password" name='confirm_1' required><br>
+                <button type="submit" class ="forget1">Send OTP</button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

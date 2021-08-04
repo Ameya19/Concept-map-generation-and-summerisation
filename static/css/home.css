@@ -1,0 +1,33 @@
+.heading{
+    margin-left: 3vw;
+    font-size: 7vh;
+    color: black;
+}
+.login{
+    margin-left: 70vw;
+}
+a{
+    padding: 1vw;
+    color: aliceblue;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    margin-top: 2vh;
+}
+body{
+    background-image: url('../images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a:hover{
+    color: #a6a59a;
+}
+.details{
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    margin-top: 13vh;
+    font-size: 3vw;
+    font-family: Brush Script MT;
+}

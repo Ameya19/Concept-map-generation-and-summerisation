@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated login signup form | example 2</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    {% block content %}
+    <div class = 'name'>
+        <table class='top-bar'>
+            <tr>
+                <th><h3 class='heading'></h3></th>
+                <th><a class='home'href="/">HOME</a></th>
+                <th><a class='aboutus' href="aboutus">ABOUT US</a></th>
+            </tr>
+        </table>
+    </div>
+    <section>
+        <div class="container">
+            <div class="user loginBx">
+                <div class="imgBx">
+                    <img src="{% static 'images/img1.jpg' %}" alt="">
+                </div>
+                <div class="formBx">
+                    <form action="login" method="POST">
+                        {% csrf_token %}
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="E-mail" name="email">
+                        <input type="password" name="password" placeholder="Password">
+                        <button>Login</button>
+                        <p class="signup">Don't have an account? <a href="#" onclick="toggleForm();">Sign Up</a>.</p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form action="otp" method="POST">
+                        {% csrf_token %}
+                        <h2>Create an account</h2>
+                        <input type="text" class="first_name" placeholder="Enter First Name" name='first_name' required><br>
+                        <input type="text" class="last_name" placeholder="Enter Last Name" name='last_name' required><br>
+                        <input type="text" placeholder="Username" name="username">
+                        <input type="text" placeholder="Email" name="sign_up">
+                        <input type="password" name="pass" id="" placeholder="Create Password">
+                        <input type="password" name="confirm" id="" placeholder="Confirm Password">
+                        <button>Sign Up</button>
+                        <p class="signup">Already have an account? <a href="#" onclick="toggleForm();">Sign In</a>.</p>
+                    </form>
+                </div>
+                <div class="imgBx">
+                    <img src="{% static 'images/img2.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function toggleForm() {
+            var container = document.querySelector('.container');
+            container.classList.toggle('active');
+        }
+    </script>
+    {% endblock %}
+</body>
+
+</html>

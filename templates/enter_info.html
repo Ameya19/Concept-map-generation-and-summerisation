@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mail Verification</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/enter_info.css' %}">
+    {% for message in messages %}
+    <script>window.alert('{{message}}');</script>
+    {% endfor %}
+</head>
+<body>
+    {% block content %}
+    <div' class = 'name'>
+        <table class='top-bar'>
+            <tr>
+                <th><h3 class='heading'></h3></th>
+                <th><a class='home' href="/">HOME</a></th>
+                <th><a class='login'href="enter_info">LOGIN</a></th>
+                <th><a class='register' href='signup'>REGISTER</a></th>
+                <th><a class='aboutus' href="aboutus">ABOUT US</a></th>
+            </tr>
+        </table>
+    </div>
+    <div class = "info">
+        <div class = "form">
+            <h3 class = "log">Login Form</h3>
+            <p class = 'log_1'>Login with your E-mail and Password</p>
+            <form action="login" method="POST">
+                {% csrf_token %}
+                <input type="email" class="email" placeholder="Enter your E-Mail ID" name='email' required><br>
+                <input type="password" class="password" placeholder="Enter your Password" name='password' required>
+                <a href= "forget" class = "forget">Forget Password?</a>
+                <button type="submit" class ="login_button">Login</button>
+                <a href= 'signup' class = "signup_info">Not a member?Signup now.</a>
+
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/aboutus.css' %}">
+</head>
+<body>
+    {% block content %}
+    <div class = 'name'>
+        <table class='top-bar'>
+            <tr>
+                <th><h3 class='heading'>LOGO</h3></th>
+                <th><a class='home' href="/">HOME</a></th>
+                <th><a class='login'href="enter_info">LOGIN</a></th>
+                <th><a class='register' href='signup'>REGISTER</a></th>
+                <th><a class='aboutus' href="aboutus">ABOUT US</a></th>
+            </tr>
+        </table>
+    </div>
+    <p>Page for about us</p>
+    {% endblock %}
+</body>
+</html>

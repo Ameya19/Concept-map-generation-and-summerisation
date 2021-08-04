@@ -1,0 +1,78 @@
+.upload{
+    position: center relative;
+    margin-left: 23vw;
+    margin-top: 22vh;
+}
+h1{
+    margin-top: 2vh;
+    text-align: center;
+    padding-top: 2vh;
+    font-family: Brush Script MT;
+    font-size: 6vw;
+    color: orange;
+}
+body{
+    background-image: url('../images/back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 3vh 6vw;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -4vw;
+    margin-top: 9vh;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload:hover{
+    position: relative;
+    background-color: orangered;
+    font-size: 2.5vw;
+    margin-left:-8vw;
+}
+.file-submit {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 3vh 6vw;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 13vw;
+    margin-top: 9vh;
+}
+.file-submit:hover{
+    position: relative;
+    background-color: orangered;
+    font-size: 2.5vw;
+}
+a:hover{
+    color: #a6a59a;
+}
+.heading{
+    margin-left: 3vw;
+    font-size: 7vh;
+    color: aliceblue;
+}
+.return{
+    margin-left: 70vw;
+}
+a{
+    padding: 1vw;
+    color: aliceblue;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    margin-top: 2vh;
+}

@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/options.css' %}">
+    <title>Upload File</title>
+</head>
+<body>
+    {% block content %}
+    <div class = 'name'>
+        <table class='top-bar'>
+            <tr>
+                <th><h3 class='heading'></h3></th>
+                <th><a class='signout'href="/">SIGNOUT</a></th>
+            </tr>
+        </table>
+    </div>
+    <form class="upload">
+        <a href= "concept" class = "concept">Concept Map</a>
+        <a href= "summerization" class = "summerization">Summerization</a>
+    </form>
+    {% endblock %}
+</body>
+</html>

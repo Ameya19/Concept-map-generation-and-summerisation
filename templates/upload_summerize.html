@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload File</title>
+        <link href="{% static 'css/upload_summerize.css' %}" rel="stylesheet">
+        {% for message in messages %}
+        <script>window.alert('{{message}}');</script>
+        {% endfor %}
+    </head>
+    <body>
+        {% block content %}
+        <div' class = 'name'>
+            <table class='top-bar'>
+                <tr>
+                    <th><h3 class='heading'></h3></th>
+                    <th><a class='return' href="options">RETURN</a></th>
+                    <th><a class='signout'href="/">SIGNOUT</a></th>
+                </tr>
+            </table>
+        </div>
+        <form action="summerize" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div id="unicycle1" class="unicycle">
+                <input type="range" class="unicycle__wheel" name="ratio" min="0" max="100" value="0">
+                <div class="unicycle__marker">
+                    <div class="unicycle__rider-head"></div>
+                    <div class="unicycle__rider-body">
+                        <div class="unicycle__left-arm">
+                            <div class="unicycle__left-lower-arm"></div>
+                        </div>
+                        <div class="unicycle__right-arm">
+                            <div class="unicycle__right-lower-arm">
+                                <div class="unicycle__flag-pole">
+                                    <div class="unicycle__flag">0</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="unicycle__left-leg">
+                            <div class="unicycle__left-lower-leg"></div>
+                        </div>
+                        <div class="unicycle__right-leg">
+                            <div class="unicycle__right-lower-leg"></div>
+                        </div>
+                    </div>
+                    <div class="unicycle__seat"></div>
+                    <div class="unicycle__bar"></div>
+                    <div class="unicycle__pedal-arms">
+                        <div class="unicycle__pedal"></div>
+                        <div class="unicycle__pedal"></div>
+                    </div>
+                </div>
+            </div>
+            <label class="custom-file-upload">
+                <input type="file" name = "file"/>Custom Upload
+            </label>
+            <button type="submit" class ="file-submit">Upload File</button>
+        </form>
+        <script src="{% static 'js/upload_summerize.js' %}"></script>
+    {% endblock %}
+    </body>
+</html>

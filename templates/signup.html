@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+    {% for message in messages %}
+    <script>window.alert('{{message}}');</script>
+    {% endfor %}
+</head>
+<body>
+    {% block content %}
+    <div' class = 'name'>
+        <table class='top-bar'>
+            <tr>
+                <th><h3 class='heading'></h3></th>
+                <th><a class='home' href="/">HOME</a></th>
+                <th><a class='login'href="enter_info">LOGIN</a></th>
+                <th><a class='register' href='signup'>REGISTER</a></th>
+                <th><a class='aboutus' href="aboutus">ABOUT US</a></th>
+            </tr>
+        </table>
+    </div>
+    <div class = "info_1">
+        <div class = "form">
+            <h3 class = "signup_info">Signup Form</h3>
+            <p class = 'signup_1'>Enter the Details for Signing Up</p>
+
+            <form action = 'otp' method="POST">
+                {% csrf_token %}
+                <input type="text" class="first_name" placeholder="Enter First Name" name='first_name' required><br>
+                <input type="text" class="last_name" placeholder="Enter Last Name" name='last_name' required><br>
+                <input type="text" class="username" placeholder="Enter Username" name='username' required><br>
+                <input type="text" class="sign_up" placeholder="Enter E-mail ID" name='sign_up' required><br>
+                <input type="password" class="password_1" placeholder="Enter Password" name='password' required><br>
+                <input type="password" class="confirm" placeholder="Confirm Password" name='confirm' required>
+                <button type="submit" class ="signup">Send OTP</button>
+            </form>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>

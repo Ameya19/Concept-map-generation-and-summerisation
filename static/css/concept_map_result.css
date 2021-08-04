@@ -1,0 +1,35 @@
+.heading{
+    margin-left: 3vw;
+    font-size: 7vh;
+    color: aliceblue;
+}
+.return{
+    margin-left: 70vw;
+}
+a{
+    padding: 1vw;
+    color: aliceblue;
+}
+.name{
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+    margin-top: 2vh;
+}
+body{
+    background-image: url('../images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+    color: white;
+}
+a:hover{
+    color: #a6a59a;
+}
+.image{
+    margin-top: 20vh;
+}
+img{
+    max-width:80%;
+    height: auto;
+}
